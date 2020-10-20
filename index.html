@@ -21,9 +21,9 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
               <span class="navbar-toggler-icon"></span>  
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand align-center " href="#">
                 <img src="img/logo.png" height="30" width="41">
-            </a>
+            </a>    
             <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"> 
@@ -33,9 +33,10 @@
                 </li> <li class="nav-item">  <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a>
                 </li>
             </ul>
-        <button class="btn"><a  data-toggle="modal" data-target="#loginmodal"><span class="fa fa-sign-in fa-lg"></span> Login</a></button>
-        </div>
-        </div>
+           </div> <button class="navbar-button btn" data-toggle="modal" data-target="#loginmodal"><span class="fa fa-sign-in fa-lg"></span> Login</button>
+           
+            </div>
+
     </nav>
     <div id="loginmodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
@@ -49,7 +50,7 @@
                         <div class="form-row">
                             <div class="form-group col-sm-4">
                                 <label class="sr-only" for="email">Email: </label>
-                                <input type="email" class="form-control " id="email" name="email" placeholder="Enter Email">
+                                 <input type="email" class="form-control " id="email" name="email" placeholder="Enter Email">
                             </div>
                             <div class="form-group col-sm-4">
                                 <label class="sr-only" for="passwd">Password: </label>
@@ -70,7 +71,71 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="modal container fade" id="reservemodal" role="dialog">
+           <div class="modal-dialog modal-lg " role="content">
+            <div class="modal-content">
+            <div  class="modal-header ">
+                <h2>Reserve A table</h2>
+                <button class="btn mr-0" data-dismiss="modal"><span class="fa fa-close"></span></button>
+            </div>
+        <div class="modal-body ">
+            <div class="form-group row ">
+                <div class="col-12 col-md-2">
+                    Number of Guests
+                </div>
+                <div class="col-md-10">
+                    
+                        <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
+                    1 &MediumSpace;
+                     <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
+                     2 &MediumSpace;
+                     <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
+                     3 &MediumSpace;
+                     <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
+                    4 &MediumSpace;
+                      <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
+                    5 &MediumSpace;
+                       <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
+                    6 &MediumSpace;
+                    </div>
+                    <div class="col-12"><br></div>
+                    <div class="col-12 col-md-2">
+                        Section
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <div class="btn-group btn-group-toggle text-white" data-toggle="buttons">
+                            <label class="btn active btn-success">
+                                <input type="radio" name="section" id="section" autocomplete="off" value="nonsmoking" checked>Non-Smoking
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" name="section" id="section" autocomplete="off" value="smoking">Smoking
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12"><br></div>
+                        <div class="col-12 col-md-2">
+                            Date and Time
+                        </div>
+                        <div class ="col-12 col-md-3">
+                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">       </div>
+                        <div class="col-12 col-md-3">
+                            <input type="text" class="form-control" id="time" name="time" placeholder="Time">       </div>
+                            
+                        </div>
+                        
+                        <div class="row">
+                            
+                            <div class="col-12 offset-md-2 ">
+                                <button type="cancel" class="btn bg-secondary text-white" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn bg-primary text-white" >
+                                    Reserve
+                                </button>
+                            </div>
+                            
+                        </div>
+                                        </div></div></div>
+           
+        </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row">
@@ -85,9 +150,9 @@
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                     
-                    <a role="button" class="btn bg-warning text-dark btn-lg btn-block" data-toggle="tooltip" 
-                    data-html="true" title="or call us <br>at <strong>+91 9310110379</strong>" data-placement="bottom"
-                    href="#card1">   Reserve Table   </a>
+                    <a role="button" class="btn bg-warning text-dark btn-lg btn-block" 
+                 data-toggle="modal"
+                    href="#reservemodal">   Reserve Table   </a>
                 </div>
             </div>
         </div>
@@ -135,6 +200,10 @@
                         <a class="carousel-control-next" role="button" data-target="#mycarousel" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
+                        <div class="btn-group" id="carouselbuttons">
+                            <button class="btn bgbtnbg text-white btn-sm" id="carouselpause" ><span class="fa fa-pause"></span></button>
+                            <button class="btn bgbtnbg text-white btn-sm" id="carouselplay" ><span class="fa fa-play"></span></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,62 +252,7 @@
                 </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row row-content">
-           <div class="col-md-2"></div>
-       <div class="col-12 col-md-8">
-            <div class="card" id="card1">
-            <h2 class="card-header bg-warning text-white">
-                Reserve A table
-            </h2>
-        <div class="card-body ">
-            <div class="form-group row ">
-                <div class="col-12 col-md-2">
-                    Number of Guests
-                </div>
-                <div class="col-md-10">
-                    
-                        <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
-                    1 &MediumSpace;
-                     <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
-                     2 &MediumSpace;
-                     <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
-                     3 &MediumSpace;
-                     <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
-                    4 &MediumSpace;
-                      <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
-                    5 &MediumSpace;
-                       <input type="radio" class="form-radio-input" id="selectmem" name="selectmem" value="">  
-                    6 &MediumSpace;
-                    </div></div>
-                    <div class="row">
-                        <div class="col-12 col-md-2">
-                            Date and Time
-                        </div>
-                        <div class ="col-12 col-md-3">
-                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">       </div>
-                        <div class="col-12 col-md-3">
-                            <input type="text" class="form-control" id="time" name="time" placeholder="Time">       </div>
-                            
-                        </div>
-                        <br>
-                        <div class="row">
-                            
-                            <div class="col-12 offset-md-2">
-                                <button type="submit" class="btn bg-primary text-white"data-toggle="tooltip" 
-                                data-html="true" title="or call us <br>at <strong>+852 12345678</strong>" data-placement="bottom"
-             >
-                                    Reserve
-                                </button>
-                            </div>
-                            
-                        </div>
-                                        </div>
-           
-        </div>
-        </div>
-    </div>
-    </div>
+          
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -285,9 +299,15 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function()  {
-            $('[data-toggle="tooltip"]').tooltip();            
-        })
+        $(document).ready(function() {
+            $('#mycarousel').carousel({interval:2000});
+            $('#carouselpause').click(function(){
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carouselplay').click(function() {
+                $('#mycarousel').carousel('cycle');
+            });
+        });
     </script>
 </body>
 
