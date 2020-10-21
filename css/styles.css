@@ -57,3 +57,21 @@ body {
 .bgbtnbg {
   background: #512DA8;
 }
+.modal .modal-content{
+  border-left:0px;
+  border-bottom: 0px; 
+}
+.modal .modal-header {
+  background: #512DA8;
+  color: floralwhite;
+  border-bottom: 0px;
+}
+.modal .modal-header #closemodal {
+  color: floralwhite;
+}
+.modal .modal-body {
+  background: #9575CD;
+  border-style: #9575CD ridge;
+  color: floralwhite;
+  
+}
