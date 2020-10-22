@@ -39,13 +39,15 @@ body {
 
 .carousel {
   background: #512DA8; }
-  .carousel .carousel-item {
-    height: 300px; }
-    .carousel .carousel-item img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-height: 300px; }
+
+.carousel .carousel-item {
+  height: 300px; }
+
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px; }
 
 #carouselButton {
   right: 0px;
@@ -59,8 +61,9 @@ body {
   background: #512DA8;
   border-bottom: 0px;
   color: floralwhite; }
-  .modal .modal-header #closemodal {
-    color: floralwhite; }
+
+.modal .modal-header #closemodal {
+  color: floralwhite; }
 
 .modal .modal-body {
   background: #D1C4E9;
